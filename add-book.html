@@ -7,7 +7,8 @@
 
 
     <link rel = "stylesheet" href = "./assets/css/style.css" />
-    <title>Document</title>
+    <title>Add Book</title>
+
 </head>
 <body>
     <!--navbar start  -->
@@ -58,7 +59,7 @@
              <div class = "text-secondary small text-uppercase fw-bold">Core </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-gauge me-1"></i>Dashboard</a>
+                <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-gauge me-1"></i>Dashbaord</a>
               </li>
               <li class="nav-item my-0">
                 <hr/>
@@ -175,190 +176,79 @@
   <div class="container-fluid">
     <div class="row dashboard-count">
       <div class="col-md-12">
-        <h4 class="fw-bold text-uppercase ">Dashboard</h4>
-        <p>Statistics of the system</p>
+        <h4 class="fw-bold text-uppercase ">Add Book</h4>
       </div>
-      <div class="col-md-3">
-        <div class="card" ;>
-          <div class="card-body text-center">
-            <h5 class="card-title text-uppercase ">Total Books</h5>
-            <h1>130</h1>
-            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">View More</a>
+
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            Fill the form
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Book Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">ISBN Number of Book</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+              
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Pulisher Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+             
+                 <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Author Name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                 </div>
+              
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Category/Course</label>
+                    <select class="form-control">
+                      <option value ="">Please select</option>
+                      <option value ="">GATE</option>
+                      <option value ="">SSC</option>
+                      <option value ="">UPSC</option>
+                      <option value ="">JEE</option>
+                      <option value ="">NEET</option>
+                      <option value ="">JEE Advanced</option>
+                      <option value ="">WBJEE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-success">Publish</button>
+                  <button type="submit" class="btn btn-secondary">Cancel</button>
+                </div>
+
+                
+                
+              
+            </div>
+            </form>
           </div>
         </div>
       </div>
-
-      <div class="col-md-3">
-        <div class="card" ;>
-          <div class="card-body text-center">
-            <h5 class="card-title text-uppercase ">Total Students</h5>
-            <h1>1200</h1>
-            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">View More</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-3">
-        <div class="card" ;>
-          <div class="card-body text-center">
-            <h5 class="card-title text-uppercase ">Total Revenue</h5>
-            <h1>1,30,000</h1>
-            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">View More</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="card" ;>
-          <div class="card-body text-center">
-            <h5 class="card-title text-uppercase ">Total Books Loan</h5>
-            <h1>168</h1>
-            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">View More</a>
-          </div>
-        </div>
-      </div>
-
-
     </div>
-
-<!-- tabs  -->
- <div class="row mt-5 dashboard-tabs">
-  <div class="col-md-12">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active text-uppercase" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">New Students</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link text-uppercase" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Recent Loans</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link text-uppercase" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Recent Subscription</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        <table class="table">
-        <thead class="table-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Preparing for </th>
-            <th scope="col">Registered On</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>MArk</td>
-            <td>UPSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-            
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-        </tbody>
-      </table></div>
-      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">  <table class="table">
-        <thead class="table-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Book Name</th>
-            <th scope="col">Loan date </th>
-            <th scope="col">Due Date</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>MArk</td>
-            <td>UPSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-            
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-        </tbody>
-      </table></div>
-      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">  <table class="table">
-        <thead class="table-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Student Name</th>
-            <th scope="col">Amount </th>
-            <th scope="col">Start Date </th>
-            <th scope="col">End  Date </th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>MArk</td>
-            <td>UPSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-            
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>SSC</td>
-            <td>10-01-25 12:30 PM</td>
-            <td>10-01-25 12:30 PM</td>
-            <td><span class="badge text-bg-success">Success</span></td>
-          </tr>
-        </tbody>
-      </table></div>
-    
-    </div>
-
   </div>
- </div>
-
-
-  </div>
-
-
 </main>
 <!-- main dashboard stops -->
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/518e5b18ce.js" crossorigin="anonymous"></script>
