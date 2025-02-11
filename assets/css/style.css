@@ -44,4 +44,7 @@ body {
          top: var(--top-navbar) !important;
 
     }
+    main{
+        margin-left : var(--offcanvas-width) !important;
+    }
 }
