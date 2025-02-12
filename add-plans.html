@@ -7,7 +7,7 @@
 
 
     <link rel = "stylesheet" href = "./assets/css/style.css" />
-    <title>Manage Books </title>
+    <title>Add Plans</title>
 
 </head>
 <body>
@@ -140,7 +140,7 @@
 
             <li class="nav-item ">
                 <a class="nav-link sidebar-link " data-bs-toggle="collapse" href="#studentmgmt2" role="button" aria-expanded="false" aria-controls="studentmgmt2">
-                    <i class="fa-solid fa-money-bill me-2"></i> Subscription
+                    <i class="fa-solid fa-money-bill me-2"></i> Subscription Plans
                     <span class ="right-icon float-end"><i class="fa-solid fa-chevron-down "></i></span>
                   </a>
                   <div class="collapse" id="studentmgmt2">
@@ -152,7 +152,6 @@
                       <li>
                         <a href = "./manage-plans.html" class ="nav-link"><i class="fa-solid fa-list me-2"></i>Purchase History </a>
                       </li>
-
                         </ul>
                      
                     </div>
@@ -173,67 +172,70 @@
 <!-- main dashboard starts  -->
 
 <main class="mt-1 pt-3 ">
-  <div class="container-fluid">
-    <div class="row dashboard-count">
-      <div class="col-md-12">
-        <h4 class="fw-bold text-uppercase ">Manage Books</h4>
-      </div>
-
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            All Books
-          </div>
-          <div class="card-body">
-            <table class="table">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col"> Book Name</th>
-                    <th scope="col">Preparing for </th>
-                    <th scope="col">Author Name</th>
-                    <th scope="col">ISBN No.</th>
-                    <th scope="col">Action</th>
-
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
+    <div class="container-fluid">
+      <div class="row dashboard-count">
+        <div class="col-md-12">
+          <h4 class="fw-bold text-uppercase ">Subscription Plans </h4>
+        </div>
+  
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              All Plans
+            </div>
+            <div class="card-body">
+              <table class="table">
+                  <thead class="table-light">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Title</th>
+                      <th scope="col">Amount </th>
+                      <th scope="col">Duration</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Action</th>
+  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Basic</td>
+                      <td>Rs 300</td>
+                      <td>1 Month</td>
+                     <td><a href ="#" class="btn btn-success btn-sm">Success</a></td>
+                      <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
+                      <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
+                      
+                    </tr>
                     
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                </tbody>
-              </table>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Premium</td>
+                        <td>Rs 300</td>
+                        <td>1 Month</td>
+                       <td><a href ="#" class="btn btn-success btn-sm">Success</a></td>
+                        <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
+                        <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Standar</td>
+                        <td>Rs 300</td>
+                        <td>1 Month</td>
+                       <td><a href ="#" class="btn btn-danger btn-sm">Inactive</a></td>
+                        <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
+                        <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
+                        
+                      </tr>
+                  </tbody>
+                </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 <!-- main dashboard stops -->
 
 
@@ -243,3 +245,4 @@
     <script src="https://kit.fontawesome.com/518e5b18ce.js" crossorigin="anonymous"></script>
 </body>
 </html>
+

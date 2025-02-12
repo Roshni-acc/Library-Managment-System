@@ -7,7 +7,7 @@
 
 
     <link rel = "stylesheet" href = "./assets/css/style.css" />
-    <title>Manage Books </title>
+    <title>Add Student</title>
 
 </head>
 <body>
@@ -176,58 +176,55 @@
   <div class="container-fluid">
     <div class="row dashboard-count">
       <div class="col-md-12">
-        <h4 class="fw-bold text-uppercase ">Manage Books</h4>
+        <h4 class="fw-bold text-uppercase ">Add Student</h4>
       </div>
 
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            All Books
+            Fill the form
           </div>
           <div class="card-body">
-            <table class="table">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col"> Book Name</th>
-                    <th scope="col">Preparing for </th>
-                    <th scope="col">Author Name</th>
-                    <th scope="col">ISBN No.</th>
-                    <th scope="col">Action</th>
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+              
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Phone No.</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1">
+                  </div>
+                </div>
+             
+                 <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                 </div>
+              
+               
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-success">Save</button>
+                  <button type="submit" class="btn btn-secondary">Cancel</button>
+                </div>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                </tbody>
-              </table>
+                
+                
+              
+            </div>
+            </form>
           </div>
         </div>
       </div>

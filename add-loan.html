@@ -7,7 +7,7 @@
 
 
     <link rel = "stylesheet" href = "./assets/css/style.css" />
-    <title>Manage Books </title>
+    <title>Add Student</title>
 
 </head>
 <body>
@@ -152,7 +152,6 @@
                       <li>
                         <a href = "./manage-plans.html" class ="nav-link"><i class="fa-solid fa-list me-2"></i>Purchase History </a>
                       </li>
-
                         </ul>
                      
                     </div>
@@ -176,58 +175,71 @@
   <div class="container-fluid">
     <div class="row dashboard-count">
       <div class="col-md-12">
-        <h4 class="fw-bold text-uppercase ">Manage Books</h4>
+        <h4 class="fw-bold text-uppercase ">Add Loan</h4>
       </div>
 
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            All Books
+            Fill the form
           </div>
           <div class="card-body">
-            <table class="table">
-                <thead class="table-light">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col"> Book Name</th>
-                    <th scope="col">Preparing for </th>
-                    <th scope="col">Author Name</th>
-                    <th scope="col">ISBN No.</th>
-                    <th scope="col">Action</th>
-
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                  </tr>
-                </tbody>
-              </table>
+            <form>
+                <form>
+                    <div class="row">  
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="book" class="form-label">Select Book</label>
+                          <select class="form-control" id="book">
+                            <option value="">Please select</option>
+                            <option value="GATE">GATE</option>
+                            <option value="SSC">SSC</option>
+                            <option value="UPSC">UPSC</option>
+                            <option value="JEE">JEE</option>
+                            <option value="NEET">NEET</option>
+                            <option value="JEE Advanced">JEE Advanced</option>
+                            <option value="WBJEE">WBJEE</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="student" class="form-label">Select Student</label>
+                          <select class="form-control" id="student">
+                            <option value="">Please select</option>
+                            <option value="GATE">GATE</option>
+                            <option value="SSC">SSC</option>
+                            <option value="UPSC">UPSC</option>
+                            <option value="JEE">JEE</option>
+                            <option value="NEET">NEET</option>
+                            <option value="JEE Advanced">JEE Advanced</option>
+                            <option value="WBJEE">WBJEE</option>
+                          </select>
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="startDate" class="form-label">Start Date</label>
+                          <input type="date" class="form-control" id="startDate">
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label for="endDate" class="form-label">End Date</label>
+                          <input type="date" class="form-control" id="endDate">
+                        </div>
+                      </div>
+                  
+                      <div class="col-md-12">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                      </div>
+                    </div>
+                  </form>
+                  
           </div>
         </div>
       </div>
@@ -243,3 +255,4 @@
     <script src="https://kit.fontawesome.com/518e5b18ce.js" crossorigin="anonymous"></script>
 </body>
 </html>
+

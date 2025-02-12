@@ -140,7 +140,7 @@
 
             <li class="nav-item ">
                 <a class="nav-link sidebar-link " data-bs-toggle="collapse" href="#studentmgmt2" role="button" aria-expanded="false" aria-controls="studentmgmt2">
-                    <i class="fa-solid fa-money-bill me-2"></i> Subscription
+                    <i class="fa-solid fa-money-bill me-2"></i> Purchase History
                     <span class ="right-icon float-end"><i class="fa-solid fa-chevron-down "></i></span>
                   </a>
                   <div class="collapse" id="studentmgmt2">
@@ -176,54 +176,78 @@
   <div class="container-fluid">
     <div class="row dashboard-count">
       <div class="col-md-12">
-        <h4 class="fw-bold text-uppercase ">Manage Books</h4>
+        <h4 class="fw-bold text-uppercase ">Purchase History</h4>
       </div>
-
+      <hr/>
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            All Books
+           Subscription Purchase History
           </div>
+
           <div class="card-body">
             <table class="table">
+                <h3>SEARCH</h3>
+               
+                <div class="row">
+                    <div class="col-md-12 d-flex gap-3">  <!-- Flexbox for horizontal alignment -->
+                      
+                      <div class="flex-grow-5">
+                        <label for="keyword" class="form-label">Keyword</label>
+                        <input type="text" class="form-control" id="keyword">
+                      </div>
+                  
+                      <div>
+                        <label for="fromDate" class="form-label">From</label>
+                        <input type="date" class="form-control" id="fromDate">
+                      </div>
+                  
+                      <div>
+                        <label for="toDate" class="form-label">To</label>
+                        <input type="date" class="form-control" id="toDate">
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+                  
+
                 <thead class="table-light">
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col"> Book Name</th>
-                    <th scope="col">Preparing for </th>
-                    <th scope="col">Author Name</th>
-                    <th scope="col">ISBN No.</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">Plan</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">End Date</th>
+                    <th scope="col">Status</th>
 
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
-                    <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
-                    
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
+                    <td>Jai Shankar </td>
+                    <td>Rs 500</td>
+                    <td>26-01-225</td>
+                    <td>26-01-225</td>
                     <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
                   </tr>
+                  
                   <tr>
-                    <th scope="row">3</th>
-                    <td>Indian Art And Culture </td>
-                    <td>JNK Publisher </td>
-                    <td>Jai Sharma</td>
-                    <td>12334455</td>
-                    <td><a href ="#" class="btn btn-primary btn-sm">Edit</a></td>
+                    <th scope="row">1</th>
+                    <td>Jai Shankar </td>
+                    <td>Rs 500</td>
+                    <td>26-01-225</td>
+                    <td>26-01-225</td>
+                    <td><a href ="#" class="btn btn-success btn-sm">Success</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Jai Shankar </td>
+                    <td>Rs 500</td>
+                    <td>26-01-225</td>
+                    <td>26-01-225</td>
                     <td><a href ="#" class="btn btn-danger btn-sm">Delete</a></td>
                   </tr>
                 </tbody>
